@@ -14,7 +14,7 @@ export default function Results(props) {
         return (
           <ResultCard key={i} show={show} />
         );
-      }) : <h1>No Results Found</h1>}
+      }) : <h1>Search For A Show</h1>}
     </div>
   );
 }

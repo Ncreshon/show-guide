@@ -5,15 +5,17 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faHome} from "@fortawesome/free-solid-svg-icons";
 import SearchInput from "../Search/SearchInput";
+
+import './NavBar.css'
 
 export default function NavBar(props) {
   const { setShows, shows } = props;
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" enableColorOnDark>
+      <AppBar className="navBar" position="static" enableColorOnDark>
         <Toolbar>
           <IconButton
             size="large"
@@ -22,7 +24,7 @@ export default function NavBar(props) {
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon icon={faHome} />
           </IconButton>
           <Typography
             variant="h6"

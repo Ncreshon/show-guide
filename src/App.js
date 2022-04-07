@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <NavBar setShows={setShows} shows={shows} />
       <Results shows={shows} />
+     
     </div>
   );
 }
